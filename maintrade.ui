@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainTradeClass</class>
+ <widget class="QMainWindow" name="MainTradeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>967</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainTrade</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMinAndMaxSize</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>1</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_loginInfo" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <widget class="QLabel" name="label_address">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>10</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>服务器</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_address">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>5</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_userID">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>10</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>帐号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_userID">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>5</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_password">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>10</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>密码</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_password">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>5</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter_logButton">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>5</y>
+         <width>150</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_login">
+        <property name="text">
+         <string>登录</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_logout">
+        <property name="text">
+         <string>退出程序</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_aboutTrade">
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QSplitter" name="splitter_aboutTrade">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="opaqueResize">
+          <bool>true</bool>
+         </property>
+         <property name="handleWidth">
+          <number>2</number>
+         </property>
+         <property name="childrenCollapsible">
+          <bool>false</bool>
+         </property>
+         <widget class="QFrame" name="frame_top">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_accountInfo">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContent_account">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>961</width>
+                <height>69</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QFrame" name="frame_middle">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_instruQuote">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_quote">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>961</width>
+                <height>69</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QFrame" name="frame_bottom">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QSplitter" name="splitter_bottom">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QFrame" name="frame_aboutOrder">
+              <property name="minimumSize">
+               <size>
+                <width>310</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>310</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Panel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QFormLayout" name="formLayout">
+               <property name="fieldGrowthPolicy">
+                <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_orderPanel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>300</width>
+                   <height>260</height>
+                  </size>
+                 </property>
+                 <property name="title">
+                  <string>下单面板</string>
+                 </property>
+                 <widget class="QLabel" name="label_instrName">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>22</y>
+                    <width>24</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>合约</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_price">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>48</y>
+                    <width>24</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>价格</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_volume">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>74</y>
+                    <width>24</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>手数</string>
+                  </property>
+                 </widget>
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_price">
+                  <property name="geometry">
+                   <rect>
+                    <x>82</x>
+                    <y>48</y>
+                    <width>91</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QSpinBox" name="spinBox_volume">
+                  <property name="geometry">
+                   <rect>
+                    <x>81</x>
+                    <y>74</y>
+                    <width>91</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="pushButton_sendOrder">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>180</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>下单</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_askPrice_name">
+                  <property name="geometry">
+                   <rect>
+                    <x>180</x>
+                    <y>48</y>
+                    <width>16</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>卖</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_bidPrice_name">
+                  <property name="geometry">
+                   <rect>
+                    <x>180</x>
+                    <y>74</y>
+                    <width>16</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>买</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_askPrice">
+                  <property name="geometry">
+                   <rect>
+                    <x>200</x>
+                    <y>48</y>
+                    <width>91</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_bidPrice">
+                  <property name="geometry">
+                   <rect>
+                    <x>200</x>
+                    <y>74</y>
+                    <width>91</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_direction">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>110</y>
+                    <width>24</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>买卖</string>
+                  </property>
+                 </widget>
+                 <widget class="QGroupBox" name="groupBox_offset">
+                  <property name="geometry">
+                   <rect>
+                    <x>70</x>
+                    <y>140</y>
+                    <width>211</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="title">
+                   <string/>
+                  </property>
+                  <widget class="QRadioButton" name="radioButton_open">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>47</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>开仓</string>
+                   </property>
+                  </widget>
+                  <widget class="QRadioButton" name="radioButton_closeToday">
+                   <property name="geometry">
+                    <rect>
+                     <x>110</x>
+                     <y>10</y>
+                     <width>47</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>平今</string>
+                   </property>
+                  </widget>
+                  <widget class="QRadioButton" name="radioButton_closeBefore">
+                   <property name="geometry">
+                    <rect>
+                     <x>160</x>
+                     <y>10</y>
+                     <width>47</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>平昨</string>
+                   </property>
+                  </widget>
+                  <widget class="QRadioButton" name="radioButton_close">
+                   <property name="geometry">
+                    <rect>
+                     <x>60</x>
+                     <y>10</y>
+                     <width>47</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>平仓</string>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QGroupBox" name="groupBox_direction">
+                  <property name="geometry">
+                   <rect>
+                    <x>70</x>
+                    <y>100</y>
+                    <width>121</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="title">
+                   <string/>
+                  </property>
+                  <widget class="QRadioButton" name="radioButton_buy">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>51</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>买入</string>
+                   </property>
+                  </widget>
+                  <widget class="QRadioButton" name="radioButton_sell">
+                   <property name="geometry">
+                    <rect>
+                     <x>70</x>
+                     <y>10</y>
+                     <width>51</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>卖出</string>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QLabel" name="label_offset">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>150</y>
+                    <width>24</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>开平</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="pushButton_cancelOrder">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>220</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>全撤</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QGroupBox" name="groupBox_ctaEngine">
+                 <property name="minimumSize">
+                  <size>
+                   <width>300</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="title">
+                  <string>CTA测试面板</string>
+                 </property>
+                 <widget class="QPushButton" name="pushButton_stopCTA">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>70</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>关闭</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="pushButton_startCTA">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>141</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>开启</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QTabWidget" name="tabWidget_aboutInfo">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>1</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <widget class="QWidget" name="tab_entrust">
+               <attribute name="title">
+                <string>委托</string>
+               </attribute>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QScrollArea" name="scrollArea_entrust">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>640</width>
+                     <height>398</height>
+                    </rect>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_position">
+               <attribute name="title">
+                <string>持仓</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QScrollArea" name="scrollArea_postion">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>640</width>
+                     <height>398</height>
+                    </rect>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_instrument">
+               <attribute name="title">
+                <string>合约</string>
+               </attribute>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QScrollArea" name="scrollArea_instrInfo">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>640</width>
+                     <height>398</height>
+                    </rect>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_monitor">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <widget class="QLabel" name="label_monitor">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>0</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>监控相关：预留</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="maintrade.qrc"/>
+ </resources>
+ <connections/>
+</ui>
