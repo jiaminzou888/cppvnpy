@@ -45,9 +45,9 @@ struct StopOrder
 
 struct CtaBarData
 {
-	std::string vtSymbol{ "" };
-	std::string symbol{ "" };
-	std::string exchange{ "" };
+	std::string vtSymbol = std::string("");
+	std::string symbol = std::string("");
+	std::string exchange = std::string("");
 	
 	double open{ 0 };
 	double high{ 0 };
