@@ -21,4 +21,4 @@
 
 ###五. 联系方式
 1. QQ：  49446532
-2. 博客： www.zoujiamin.com
+2. 知乎：https://zhuanlan.zhihu.com/flyingcat
